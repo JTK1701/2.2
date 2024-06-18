@@ -1,4 +1,4 @@
-abstract public class Vehicle {
+abstract public class Vehicle implements Serviceable, TypeOfRepair {
     private String modelName;
     private int wheelsCount;
 
@@ -7,20 +7,19 @@ abstract public class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
+    public void updateTyre() {
+        System.out.println("В работе " + this.getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрышку");
+        }
+    }
+
     public String getModelName() {
         return this.modelName;
     }
 
     public int getWheelsCount() {
         return this.wheelsCount;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
     }
 
     @Override

@@ -1,12 +1,9 @@
 public interface TypeOfRepair {
-    public default void updateTyre() {
+    default void checkTrailer() {
+        System.out.println("Проверяем прицеп");
     }
 
-    public default void checkEngine() {
-        System.out.println("У данного транспортного средства отсутствует двигатель");
-    }
-
-    public default void checkTrailer() {
-        System.out.println("У данного транспортного средства отсутствует прицеп");
+    default void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
 }
