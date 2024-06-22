@@ -5,12 +5,8 @@ public class Car extends Vehicle implements TypeOfRepair {
     }
 
     @Override
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    @Override
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public void service() {
+        updateTyre();
+        checkEngine();
     }
 }
