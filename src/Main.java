@@ -9,7 +9,8 @@ public class Main {
         transport[5] = new Truck("Skania", 6);
         ServiceStation serviceStation = new ServiceStation();
         for (int i = 0; i < transport.length - 1; i++) {
-            serviceStation.check((Vehicle) transport[i]);
+            serviceStation.check(transport[i]);
         }
+        transport[0].service();
     }
 }

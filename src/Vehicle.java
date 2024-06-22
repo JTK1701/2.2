@@ -1,4 +1,4 @@
-abstract public class Vehicle implements Serviceable, TypeOfRepair {
+abstract public class Vehicle implements Serviceable {
     private String modelName;
     private int wheelsCount;
 
@@ -12,6 +12,10 @@ abstract public class Vehicle implements Serviceable, TypeOfRepair {
         for (int i = 0; i < getWheelsCount(); i++) {
             System.out.println("Меняем покрышку");
         }
+    }
+
+    @Override
+    public void service() {
     }
 
     public String getModelName() {

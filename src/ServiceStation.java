@@ -1,5 +1,7 @@
 public class ServiceStation {
-    public void check(Vehicle vehicle) {
-        vehicle.service();
+    public void check(Serviceable... serviceables) {
+        for (Serviceable serviceable : serviceables) {
+            serviceable.service();
+        }
     }
 }

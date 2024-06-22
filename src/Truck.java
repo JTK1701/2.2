@@ -1,4 +1,4 @@
-public class Truck extends Vehicle {
+public class Truck extends Vehicle implements TypeOfRepair{
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
