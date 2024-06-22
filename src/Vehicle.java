@@ -31,3 +31,4 @@ abstract public class Vehicle implements Serviceable {
         return (this.getModelName() + ". Колёс - " + this.getWheelsCount());
     }
 }
+

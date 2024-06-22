@@ -11,6 +11,5 @@ public class Main {
         for (int i = 0; i < transport.length - 1; i++) {
             serviceStation.check(transport[i]);
         }
-        transport[0].service();
     }
 }
